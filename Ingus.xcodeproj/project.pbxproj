@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D93C8BED192B1E7500172591 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D93C8BEC192B1E7500172591 /* Foundation.framework */; };
+		D93C8BEF192B1E7500172591 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D93C8BEE192B1E7500172591 /* CoreGraphics.framework */; };
+		D93C8BF1192B1E7500172591 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D93C8BF0192B1E7500172591 /* UIKit.framework */; };
+		D93C8BF7192B1E7500172591 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D93C8BF5192B1E7500172591 /* InfoPlist.strings */; };
+		D93C8BF9192B1E7500172591 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D93C8BF8192B1E7500172591 /* main.m */; };
+		D93C8BFD192B1E7500172591 /* IngAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D93C8BFC192B1E7500172591 /* IngAppDelegate.m */; };
+		D93C8BFF192B1E7500172591 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D93C8BFE192B1E7500172591 /* Images.xcassets */; };
+		D93C8C06192B1E7500172591 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D93C8C05192B1E7500172591 /* XCTest.framework */; };
+		D93C8C07192B1E7500172591 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D93C8BEC192B1E7500172591 /* Foundation.framework */; };
+		D93C8C08192B1E7500172591 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D93C8BF0192B1E7500172591 /* UIKit.framework */; };
+		D93C8C10192B1E7500172591 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D93C8C0E192B1E7500172591 /* InfoPlist.strings */; };
+		D93C8C12192B1E7600172591 /* IngusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D93C8C11192B1E7600172591 /* IngusTests.m */; };
+		D93C8C1C192B1FFD00172591 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D93C8C1B192B1FFD00172591 /* Main.storyboard */; };
+		D93C8C2D192B32FE00172591 /* IngAddTodoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D93C8C2B192B32FE00172591 /* IngAddTodoListViewController.m */; };
+		D93C8C2E192B32FE00172591 /* IngAddTodoListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D93C8C2C192B32FE00172591 /* IngAddTodoListViewController.xib */; };
+		D93C8C32192B345200172591 /* IngTodoListTableControllerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D93C8C30192B345200172591 /* IngTodoListTableControllerTableViewController.m */; };
+		D93C8C33192B345200172591 /* IngTodoListTableControllerTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D93C8C31192B345200172591 /* IngTodoListTableControllerTableViewController.xib */; };
+		D9F28538192B72CF00499545 /* IngTodoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F28537192B72CF00499545 /* IngTodoItem.m */; };
+		D9F2853D192B868500499545 /* water-xxl.png in Resources */ = {isa = PBXBuildFile; fileRef = D9F2853C192B868500499545 /* water-xxl.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D93C8C09192B1E7500172591 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D93C8BE1192B1E7500172591 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D93C8BE8192B1E7500172591;
+			remoteInfo = Ingus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D93C8BE9192B1E7500172591 /* Ingus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ingus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D93C8BEC192B1E7500172591 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D93C8BEE192B1E7500172591 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D93C8BF0192B1E7500172591 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D93C8BF4192B1E7500172591 /* Ingus-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ingus-Info.plist"; sourceTree = "<group>"; };
+		D93C8BF6192B1E7500172591 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D93C8BF8192B1E7500172591 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D93C8BFA192B1E7500172591 /* Ingus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ingus-Prefix.pch"; sourceTree = "<group>"; };
+		D93C8BFB192B1E7500172591 /* IngAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IngAppDelegate.h; sourceTree = "<group>"; };
+		D93C8BFC192B1E7500172591 /* IngAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IngAppDelegate.m; sourceTree = "<group>"; };
+		D93C8BFE192B1E7500172591 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D93C8C04192B1E7500172591 /* IngusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IngusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D93C8C05192B1E7500172591 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D93C8C0D192B1E7500172591 /* IngusTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IngusTests-Info.plist"; sourceTree = "<group>"; };
+		D93C8C0F192B1E7500172591 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D93C8C11192B1E7600172591 /* IngusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IngusTests.m; sourceTree = "<group>"; };
+		D93C8C1B192B1FFD00172591 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D93C8C2A192B32FE00172591 /* IngAddTodoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IngAddTodoListViewController.h; sourceTree = "<group>"; };
+		D93C8C2B192B32FE00172591 /* IngAddTodoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IngAddTodoListViewController.m; sourceTree = "<group>"; };
+		D93C8C2C192B32FE00172591 /* IngAddTodoListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IngAddTodoListViewController.xib; sourceTree = "<group>"; };
+		D93C8C2F192B345200172591 /* IngTodoListTableControllerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IngTodoListTableControllerTableViewController.h; sourceTree = "<group>"; };
+		D93C8C30192B345200172591 /* IngTodoListTableControllerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IngTodoListTableControllerTableViewController.m; sourceTree = "<group>"; };
+		D93C8C31192B345200172591 /* IngTodoListTableControllerTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IngTodoListTableControllerTableViewController.xib; sourceTree = "<group>"; };
+		D9F28536192B72CF00499545 /* IngTodoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IngTodoItem.h; sourceTree = "<group>"; };
+		D9F28537192B72CF00499545 /* IngTodoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IngTodoItem.m; sourceTree = "<group>"; };
+		D9F2853C192B868500499545 /* water-xxl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "water-xxl.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D93C8BE6192B1E7500172591 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D93C8BEF192B1E7500172591 /* CoreGraphics.framework in Frameworks */,
+				D93C8BF1192B1E7500172591 /* UIKit.framework in Frameworks */,
+				D93C8BED192B1E7500172591 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D93C8C01192B1E7500172591 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D93C8C06192B1E7500172591 /* XCTest.framework in Frameworks */,
+				D93C8C08192B1E7500172591 /* UIKit.framework in Frameworks */,
+				D93C8C07192B1E7500172591 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D93C8BE0192B1E7500172591 = {
+			isa = PBXGroup;
+			children = (
+				D93C8BF2192B1E7500172591 /* Ingus */,
+				D93C8C0B192B1E7500172591 /* IngusTests */,
+				D93C8BEB192B1E7500172591 /* Frameworks */,
+				D93C8BEA192B1E7500172591 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D93C8BEA192B1E7500172591 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D93C8BE9192B1E7500172591 /* Ingus.app */,
+				D93C8C04192B1E7500172591 /* IngusTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D93C8BEB192B1E7500172591 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D93C8BEC192B1E7500172591 /* Foundation.framework */,
+				D93C8BEE192B1E7500172591 /* CoreGraphics.framework */,
+				D93C8BF0192B1E7500172591 /* UIKit.framework */,
+				D93C8C05192B1E7500172591 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D93C8BF2192B1E7500172591 /* Ingus */ = {
+			isa = PBXGroup;
+			children = (
+				D93C8C1D192B23A100172591 /* Assets */,
+				D93C8BFB192B1E7500172591 /* IngAppDelegate.h */,
+				D93C8BFC192B1E7500172591 /* IngAppDelegate.m */,
+				D93C8BFE192B1E7500172591 /* Images.xcassets */,
+				D93C8BF3192B1E7500172591 /* Supporting Files */,
+				D93C8C1B192B1FFD00172591 /* Main.storyboard */,
+				D93C8C2A192B32FE00172591 /* IngAddTodoListViewController.h */,
+				D93C8C2B192B32FE00172591 /* IngAddTodoListViewController.m */,
+				D93C8C2C192B32FE00172591 /* IngAddTodoListViewController.xib */,
+				D93C8C2F192B345200172591 /* IngTodoListTableControllerTableViewController.h */,
+				D93C8C30192B345200172591 /* IngTodoListTableControllerTableViewController.m */,
+				D93C8C31192B345200172591 /* IngTodoListTableControllerTableViewController.xib */,
+				D9F28536192B72CF00499545 /* IngTodoItem.h */,
+				D9F28537192B72CF00499545 /* IngTodoItem.m */,
+			);
+			path = Ingus;
+			sourceTree = "<group>";
+		};
+		D93C8BF3192B1E7500172591 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D93C8BF4192B1E7500172591 /* Ingus-Info.plist */,
+				D93C8BF5192B1E7500172591 /* InfoPlist.strings */,
+				D93C8BF8192B1E7500172591 /* main.m */,
+				D93C8BFA192B1E7500172591 /* Ingus-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D93C8C0B192B1E7500172591 /* IngusTests */ = {
+			isa = PBXGroup;
+			children = (
+				D93C8C11192B1E7600172591 /* IngusTests.m */,
+				D93C8C0C192B1E7500172591 /* Supporting Files */,
+			);
+			path = IngusTests;
+			sourceTree = "<group>";
+		};
+		D93C8C0C192B1E7500172591 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D93C8C0D192B1E7500172591 /* IngusTests-Info.plist */,
+				D93C8C0E192B1E7500172591 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D93C8C1D192B23A100172591 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				D9F2853C192B868500499545 /* water-xxl.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D93C8BE8192B1E7500172591 /* Ingus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D93C8C15192B1E7600172591 /* Build configuration list for PBXNativeTarget "Ingus" */;
+			buildPhases = (
+				D93C8BE5192B1E7500172591 /* Sources */,
+				D93C8BE6192B1E7500172591 /* Frameworks */,
+				D93C8BE7192B1E7500172591 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ingus;
+			productName = Ingus;
+			productReference = D93C8BE9192B1E7500172591 /* Ingus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D93C8C03192B1E7500172591 /* IngusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D93C8C18192B1E7600172591 /* Build configuration list for PBXNativeTarget "IngusTests" */;
+			buildPhases = (
+				D93C8C00192B1E7500172591 /* Sources */,
+				D93C8C01192B1E7500172591 /* Frameworks */,
+				D93C8C02192B1E7500172591 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D93C8C0A192B1E7500172591 /* PBXTargetDependency */,
+			);
+			name = IngusTests;
+			productName = IngusTests;
+			productReference = D93C8C04192B1E7500172591 /* IngusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D93C8BE1192B1E7500172591 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Ing;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Oleafs Integrasi Mandiri";
+				TargetAttributes = {
+					D93C8C03192B1E7500172591 = {
+						TestTargetID = D93C8BE8192B1E7500172591;
+					};
+				};
+			};
+			buildConfigurationList = D93C8BE4192B1E7500172591 /* Build configuration list for PBXProject "Ingus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D93C8BE0192B1E7500172591;
+			productRefGroup = D93C8BEA192B1E7500172591 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D93C8BE8192B1E7500172591 /* Ingus */,
+				D93C8C03192B1E7500172591 /* IngusTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D93C8BE7192B1E7500172591 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D93C8C1C192B1FFD00172591 /* Main.storyboard in Resources */,
+				D93C8C33192B345200172591 /* IngTodoListTableControllerTableViewController.xib in Resources */,
+				D93C8BF7192B1E7500172591 /* InfoPlist.strings in Resources */,
+				D93C8BFF192B1E7500172591 /* Images.xcassets in Resources */,
+				D9F2853D192B868500499545 /* water-xxl.png in Resources */,
+				D93C8C2E192B32FE00172591 /* IngAddTodoListViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D93C8C02192B1E7500172591 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D93C8C10192B1E7500172591 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D93C8BE5192B1E7500172591 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D93C8BF9192B1E7500172591 /* main.m in Sources */,
+				D9F28538192B72CF00499545 /* IngTodoItem.m in Sources */,
+				D93C8C32192B345200172591 /* IngTodoListTableControllerTableViewController.m in Sources */,
+				D93C8BFD192B1E7500172591 /* IngAppDelegate.m in Sources */,
+				D93C8C2D192B32FE00172591 /* IngAddTodoListViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D93C8C00192B1E7500172591 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D93C8C12192B1E7600172591 /* IngusTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D93C8C0A192B1E7500172591 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D93C8BE8192B1E7500172591 /* Ingus */;
+			targetProxy = D93C8C09192B1E7500172591 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D93C8BF5192B1E7500172591 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D93C8BF6192B1E7500172591 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D93C8C0E192B1E7500172591 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D93C8C0F192B1E7500172591 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D93C8C13192B1E7600172591 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D93C8C14192B1E7600172591 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D93C8C16192B1E7600172591 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ingus/Ingus-Prefix.pch";
+				INFOPLIST_FILE = "Ingus/Ingus-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D93C8C17192B1E7600172591 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ingus/Ingus-Prefix.pch";
+				INFOPLIST_FILE = "Ingus/Ingus-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D93C8C19192B1E7600172591 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Ingus.app/Ingus";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ingus/Ingus-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "IngusTests/IngusTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D93C8C1A192B1E7600172591 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Ingus.app/Ingus";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ingus/Ingus-Prefix.pch";
+				INFOPLIST_FILE = "IngusTests/IngusTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D93C8BE4192B1E7500172591 /* Build configuration list for PBXProject "Ingus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D93C8C13192B1E7600172591 /* Debug */,
+				D93C8C14192B1E7600172591 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D93C8C15192B1E7600172591 /* Build configuration list for PBXNativeTarget "Ingus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D93C8C16192B1E7600172591 /* Debug */,
+				D93C8C17192B1E7600172591 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D93C8C18192B1E7600172591 /* Build configuration list for PBXNativeTarget "IngusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D93C8C19192B1E7600172591 /* Debug */,
+				D93C8C1A192B1E7600172591 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D93C8BE1192B1E7500172591 /* Project object */;
+}
