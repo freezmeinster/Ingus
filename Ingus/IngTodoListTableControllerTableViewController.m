@@ -13,6 +13,7 @@
 @interface IngTodoListTableControllerTableViewController ()
 
 @property NSMutableArray *toDoItems;
+@property IngConnect *connection;
 
 @end
 
@@ -23,10 +24,44 @@
     IngAddTodoListViewController *source = [segue sourceViewController];
     IngTodoItem *item = source.toDoItem;
     if (item != nil){
-        [self.toDoItems addObject:item];
-        [self.tableView reloadData];
+        [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+        dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
+            [self.toDoItems addObject:item];
+            [self.connection insertToCloud:@"afafafaf"];
+            [self.tableView reloadData];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [MBProgressHUD hideHUDForView:self.view animated:YES];
+            });
+        });
         
     }
+}
+
+- (IBAction)syncTodo:(id)sender {
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
+    
+        self.toDoItems = [[NSMutableArray alloc] init];
+        IngTodoItem *item1 = [[IngTodoItem alloc] init];
+        item1.itemName = @"Makan sama bu maya";
+    
+        IngTodoItem *item2 = [[IngTodoItem alloc] init];
+        item2.itemName = @"Mandi dulu";
+    
+        IngTodoItem *item3 = [[IngTodoItem alloc] init];
+        item3.itemName = @"Makan mie ayam";
+    
+        [self.toDoItems addObject:item1];
+        [self.toDoItems addObject:item2];
+        [self.toDoItems addObject:item3];
+    
+        [self.tableView reloadData];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [MBProgressHUD hideHUDForView:self.view animated:YES];
+        });
+    });
+
+
 }
 
 - (void)viewDidLoad

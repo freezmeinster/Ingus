@@ -24,6 +24,8 @@
 		D93C8C2E192B32FE00172591 /* IngAddTodoListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D93C8C2C192B32FE00172591 /* IngAddTodoListViewController.xib */; };
 		D93C8C32192B345200172591 /* IngTodoListTableControllerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D93C8C30192B345200172591 /* IngTodoListTableControllerTableViewController.m */; };
 		D93C8C33192B345200172591 /* IngTodoListTableControllerTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D93C8C31192B345200172591 /* IngTodoListTableControllerTableViewController.xib */; };
+		D9E0F908192E250C0069C164 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E0F906192E250C0069C164 /* MBProgressHUD.m */; };
+		D9E0F90B192E252A0069C164 /* IngConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E0F90A192E252A0069C164 /* IngConnect.m */; };
 		D9F28538192B72CF00499545 /* IngTodoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F28537192B72CF00499545 /* IngTodoItem.m */; };
 		D9F2853D192B868500499545 /* water-xxl.png in Resources */ = {isa = PBXBuildFile; fileRef = D9F2853C192B868500499545 /* water-xxl.png */; };
 /* End PBXBuildFile section */
@@ -62,6 +64,10 @@
 		D93C8C2F192B345200172591 /* IngTodoListTableControllerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IngTodoListTableControllerTableViewController.h; sourceTree = "<group>"; };
 		D93C8C30192B345200172591 /* IngTodoListTableControllerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IngTodoListTableControllerTableViewController.m; sourceTree = "<group>"; };
 		D93C8C31192B345200172591 /* IngTodoListTableControllerTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IngTodoListTableControllerTableViewController.xib; sourceTree = "<group>"; };
+		D9E0F906192E250C0069C164 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		D9E0F907192E250C0069C164 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		D9E0F909192E252A0069C164 /* IngConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IngConnect.h; sourceTree = "<group>"; };
+		D9E0F90A192E252A0069C164 /* IngConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IngConnect.m; sourceTree = "<group>"; };
 		D9F28536192B72CF00499545 /* IngTodoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IngTodoItem.h; sourceTree = "<group>"; };
 		D9F28537192B72CF00499545 /* IngTodoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IngTodoItem.m; sourceTree = "<group>"; };
 		D9F2853C192B868500499545 /* water-xxl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "water-xxl.png"; sourceTree = "<group>"; };
@@ -124,6 +130,8 @@
 		D93C8BF2192B1E7500172591 /* Ingus */ = {
 			isa = PBXGroup;
 			children = (
+				D9E0F906192E250C0069C164 /* MBProgressHUD.m */,
+				D9E0F907192E250C0069C164 /* MBProgressHUD.h */,
 				D93C8C1D192B23A100172591 /* Assets */,
 				D93C8BFB192B1E7500172591 /* IngAppDelegate.h */,
 				D93C8BFC192B1E7500172591 /* IngAppDelegate.m */,
@@ -138,6 +146,8 @@
 				D93C8C31192B345200172591 /* IngTodoListTableControllerTableViewController.xib */,
 				D9F28536192B72CF00499545 /* IngTodoItem.h */,
 				D9F28537192B72CF00499545 /* IngTodoItem.m */,
+				D9E0F909192E252A0069C164 /* IngConnect.h */,
+				D9E0F90A192E252A0069C164 /* IngConnect.m */,
 			);
 			path = Ingus;
 			sourceTree = "<group>";
@@ -279,7 +289,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9E0F90B192E252A0069C164 /* IngConnect.m in Sources */,
 				D93C8BF9192B1E7500172591 /* main.m in Sources */,
+				D9E0F908192E250C0069C164 /* MBProgressHUD.m in Sources */,
 				D9F28538192B72CF00499545 /* IngTodoItem.m in Sources */,
 				D93C8C32192B345200172591 /* IngTodoListTableControllerTableViewController.m in Sources */,
 				D93C8BFD192B1E7500172591 /* IngAppDelegate.m in Sources */,

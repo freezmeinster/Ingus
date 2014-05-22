@@ -29,6 +29,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="My Todo List" id="auo-Ty-fgJ">
+                        <barButtonItem key="leftBarButtonItem" title="Sync" id="w7n-sc-c7u">
+                            <connections>
+                                <action selector="syncTodo:" destination="Eud-nf-7cI" id="76r-jK-q2e"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" id="SNZ-5F-2Ll">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XSN-ng-MIF">
                                 <rect key="frame" x="233" y="5" width="71" height="33"/>

@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MBProgressHUD.h"
+#import "IngConnect.h"
 
 @interface IngTodoListTableControllerTableViewController : UITableViewController
 
