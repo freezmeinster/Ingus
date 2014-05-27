@@ -25,6 +25,7 @@
 		D93C8C32192B345200172591 /* IngTodoListTableControllerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D93C8C30192B345200172591 /* IngTodoListTableControllerTableViewController.m */; };
 		D93C8C33192B345200172591 /* IngTodoListTableControllerTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D93C8C31192B345200172591 /* IngTodoListTableControllerTableViewController.xib */; };
 		D970777F1934FFB400295117 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = D970777E1934FFB400295117 /* readme.md */; };
+		D9707781193505E100295117 /* home_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = D9707780193505E100295117 /* home_screen.png */; };
 		D9D5FA3A19338AE000AE211A /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D5FA1C19338AE000AE211A /* Base64.m */; };
 		D9D5FA3B19338AE000AE211A /* UNIBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D5FA1F19338AE000AE211A /* UNIBaseRequest.m */; };
 		D9D5FA3C19338AE000AE211A /* UNIBodyRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D5FA2119338AE000AE211A /* UNIBodyRequest.m */; };
@@ -80,6 +81,7 @@
 		D93C8C30192B345200172591 /* IngTodoListTableControllerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IngTodoListTableControllerTableViewController.m; sourceTree = "<group>"; };
 		D93C8C31192B345200172591 /* IngTodoListTableControllerTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IngTodoListTableControllerTableViewController.xib; sourceTree = "<group>"; };
 		D970777E1934FFB400295117 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.md; sourceTree = "<group>"; };
+		D9707780193505E100295117 /* home_screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home_screen.png; path = screenshot/home_screen.png; sourceTree = "<group>"; };
 		D9D5FA1B19338AE000AE211A /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
 		D9D5FA1C19338AE000AE211A /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
 		D9D5FA1E19338AE000AE211A /* UNIBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNIBaseRequest.h; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				D970777E1934FFB400295117 /* readme.md */,
+				D9707780193505E100295117 /* home_screen.png */,
 				D93C8BF2192B1E7500172591 /* Ingus */,
 				D93C8C0B192B1E7500172591 /* IngusTests */,
 				D93C8BEB192B1E7500172591 /* Frameworks */,
@@ -366,6 +369,7 @@
 			files = (
 				D93C8C1C192B1FFD00172591 /* Main.storyboard in Resources */,
 				D93C8C33192B345200172591 /* IngTodoListTableControllerTableViewController.xib in Resources */,
+				D9707781193505E100295117 /* home_screen.png in Resources */,
 				D970777F1934FFB400295117 /* readme.md in Resources */,
 				D93C8BF7192B1E7500172591 /* InfoPlist.strings in Resources */,
 				D93C8BFF192B1E7500172591 /* Images.xcassets in Resources */,
