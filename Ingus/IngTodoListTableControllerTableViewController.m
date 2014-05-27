@@ -9,11 +9,11 @@
 #import "IngTodoListTableControllerTableViewController.h"
 #import "IngTodoItem.h"
 #import "IngAddTodoListViewController.h"
+#import "IngConnect.h"
 
 @interface IngTodoListTableControllerTableViewController ()
 
 @property NSMutableArray *toDoItems;
-@property IngConnect *connection;
 
 @end
 
@@ -27,7 +27,8 @@
         [MBProgressHUD showHUDAddedTo:self.view animated:YES];
         dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
             [self.toDoItems addObject:item];
-            [self.connection insertToCloud:@"afafafaf"];
+            IngConnect *conn = [[IngConnect alloc] init];
+            [conn insertToCloud:item.itemName];
             [self.tableView reloadData];
             dispatch_async(dispatch_get_main_queue(), ^{
                 [MBProgressHUD hideHUDForView:self.view animated:YES];
@@ -38,36 +39,12 @@
 }
 
 - (IBAction)syncTodo:(id)sender {
-    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
-    
-        self.toDoItems = [[NSMutableArray alloc] init];
-        IngTodoItem *item1 = [[IngTodoItem alloc] init];
-        item1.itemName = @"Makan sama bu maya";
-    
-        IngTodoItem *item2 = [[IngTodoItem alloc] init];
-        item2.itemName = @"Mandi dulu";
-    
-        IngTodoItem *item3 = [[IngTodoItem alloc] init];
-        item3.itemName = @"Makan mie ayam";
-    
-        [self.toDoItems addObject:item1];
-        [self.toDoItems addObject:item2];
-        [self.toDoItems addObject:item3];
-    
-        [self.tableView reloadData];
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [MBProgressHUD hideHUDForView:self.view animated:YES];
-        });
-    });
-
-
+    [self loadInitData];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.toDoItems = [[NSMutableArray alloc] init];
     [self loadInitData];
 }
 
@@ -79,20 +56,23 @@
 
 - (void) loadInitData
 {
-    /*
-    IngTodoItem *item1 = [[IngTodoItem alloc] init];
-    item1.itemName = @"Makan sama bu maya";
-
-    IngTodoItem *item2 = [[IngTodoItem alloc] init];
-    item2.itemName = @"Mandi dulu";
-    
-    IngTodoItem *item3 = [[IngTodoItem alloc] init];
-    item3.itemName = @"Makan mie ayam";
-    
-    [self.toDoItems addObject:item1];
-    [self.toDoItems addObject:item2];
-    [self.toDoItems addObject:item3];
-    */
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
+        self.toDoItems = [[NSMutableArray alloc] init];
+        IngConnect *conn = [[IngConnect alloc] init];
+        NSArray *result = [conn fetchAll];
+        for (id item in result){
+            IngTodoItem *todos = [[IngTodoItem alloc] init];
+            todos.dataId = item[@"id"];
+            todos.itemName = item[@"name"];
+            todos.completed = [item[@"completed"] boolValue];
+            [self.toDoItems addObject:todos];
+        }
+        [self.tableView reloadData];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [MBProgressHUD hideHUDForView:self.view animated:YES];
+        });
+    });
     
 }
 #pragma mark - Table view data source
@@ -127,17 +107,13 @@
 }
 
 
-/*
-// Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Return NO if you do not want the specified item to be editable.
     return YES;
 }
-*/
 
-/*
-// Override to support editing the table view.
+
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
@@ -147,7 +123,6 @@
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }   
 }
-*/
 
 /*
 // Override to supportle rearranging the table view.
@@ -170,7 +145,20 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
     IngTodoItem *tappedItem = [self.toDoItems objectAtIndex:indexPath.row];
+    IngConnect *conn = [[IngConnect alloc] init];
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
+        if (tappedItem.completed){
+            [conn setStatus:tappedItem.dataId stat:@"false"];
+        }else{
+            [conn setStatus:tappedItem.dataId stat:@"true"];
+        }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [MBProgressHUD hideHUDForView:self.view animated:YES];
+        });
+    });
     tappedItem.completed = !tappedItem.completed;
+    NSLog(@"%@", tappedItem.completed ? @"YES" : @"NO");
     [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
 }
 

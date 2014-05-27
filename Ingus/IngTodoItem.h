@@ -10,8 +10,12 @@
 
 @interface IngTodoItem : NSObject
 
+@property NSString *dataId;
 @property NSString *itemName;
 @property BOOL completed;
-@property (readonly) NSDate *creationDate;
+@property NSDate *creationDate;
+@property NSDate *completedDate;
+
+- (NSString *)getCurrentDate;
 
 @end
