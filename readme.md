@@ -19,7 +19,7 @@ iNgus menggunakan beberapa library opensource untuk menjalankan beberapa fungsio
 
 * [MBProgressHUD] - a translucent HUD
 * [unirest] - Unirest in Objective-C: Simplified, lightweight HTTP library
-
+* [NowDB] - Backend database on the cloud :)
 
 
 License
@@ -33,3 +33,4 @@ Screenshot
 
 [MBProgressHUD]:https://github.com/jdg/MBProgressHUD
 [unirest]:https://github.com/Mashape/unirest-obj-c
+[NowDB]:http://io.nowdb.net
